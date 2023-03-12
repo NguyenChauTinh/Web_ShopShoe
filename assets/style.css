@@ -229,7 +229,7 @@
     font-weight: bold;
 }
 
-/* Container slider shop */
+/* Container slider shop,product,about,contact */
 
 .container__slider-second-title {
     position: absolute;
@@ -256,6 +256,11 @@
     text-shadow: 0 0 2px black;
 
 }
+
+/* Shop */
+
+
+/* Product */
 
 /* End */
 
