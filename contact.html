@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoes Shop</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/base.css">
@@ -14,33 +14,41 @@
     <div class="app">
         <!-- Header -->
         <header class="header">
-            <div class="grid gird-border">
+            <div class="grid">
                 <!-- Navbar -->
                 <nav class="header__navbar">
-                    <div class="header__logo">Champz</div>
+                    <div class="header__logo">jordan</div>
                     <ul class="header__controls">
                         <li class="header__controls-titles">
-                            <a href="" class="header__controls-title">HOME</a> 
+                            <a href="./home.html" class="header__controls-title">HOME</a> 
                         </li>
                         <li class="header__controls-titles">
-                            <a href="" class="header__controls-title">ABOUT</a> 
+                            <a href="./about.html" class="header__controls-title">ABOUT</a> 
+                        </li>
+                        <li class="header__controls-titles header__controls-title--icons header__controls-title--child">
+                            <span class="header__controls-title">STORE</span>
+                            <i class="header__controls-title--icon fa-solid fa-angle-down"></i>
+                            <div class="store__controls-title">
+                                <ul class="store__controls-title--ul">
+                                    <li class="store__controls-title--li"><a href="./shop.html">SHOP</a></li>
+                                    <li class="store__controls-title--li"><a href="./products_detais.html">PRODUCTS DETAILS</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="header__controls-titles">
-                            <a href="" class="header__controls-title">STORE</a> 
-                        </li>
-                        <li class="header__controls-titles">
-                            <a href="" class="header__controls-title">CONTACT</a> 
+                            <a href="./contact.html" class="header__controls-title">CONTACT</a>
                         </li>
                     </ul>
                     <ul class="header__login">
                         <li class="header__login-icons">
-                            <a href="">
-                                <i class="fa-solid fa-user header__login-icon"></i>
-                            </a>
+                            <div class="">
+                                <input class="header__login-input" type="text">
+                                <i class="fa-solid fa-magnifying-glass header__login-icon--search"></i>
+                            </div>
                         </li>
                         <li class="header__login-icons">
                             <a href="">
-                                <i class="fa-solid fa-magnifying-glass header__login-icon"></i>
+                                <i class="fa-solid fa-user header__login-icon"></i>
                             </a>
                         </li>
                         <li class="header__login-icons">
@@ -59,22 +67,11 @@
         <div class="container">
             <div class="grid__full-width">
                 <div class="container__slider">
-                    <img class="container__slider-items" src="./assets/img/slider/slider (9).jpg" alt="">
+                    <img class="container__slider-items" src="./assets/img/slider/slider (3).jpg" alt="">
 
                     <div class="container__slider-title">
                         
-                        <h6 class="slider__title--h6">super deals</h6>
-                        <h1 class="slider__title--h1">road</h1>
-                        <h1 class="slider__title--h1">running</h1>
-                        <h1 class="slider__title--h1">balck editions</h1>
-                        <p class="slider__title--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.    
-                        </p>
-                        <div class="slider__tilte--btn">
-                            <a class="slider__title--a" role="button" href="">
-                                <span class="slider__title--span">SHOP NOW</span>
-                            </a>
-                        </div>
+                        
                     </div>
 
                 </div>
@@ -84,10 +81,6 @@
         <!-- Footer -->
         <footer class="footer"></footer>
         <!-- End -->
-
-
-
-
     </div>
 </body>
 </html>
