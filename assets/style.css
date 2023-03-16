@@ -55,6 +55,7 @@
 
 .header__controls-titles {
     position: relative;
+    animation: growUp 1s ease-in-out;
 }
 
 .header__controls-title--icon {
@@ -168,6 +169,7 @@
     /* background-color: #ccc; */
     top: 182px;
     left: 156px;
+    animation: growUp 1s ease-in-out;
     
 }
 
@@ -276,6 +278,7 @@
 
 .grid.container__order-box {
     position: relative;
+    animation: growUp 1s ease-in-out;
 }
 
 .container__order {
@@ -341,6 +344,8 @@
     width: 100%;
     height: 700px;
     margin-top: 150px;
+    animation: growUp 1s ease-in-out;
+
 }
 
 .container__collections-header {
