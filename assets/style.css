@@ -253,8 +253,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
     /* height: 484px; */
     width: 830px;
+    animation: growUpSilder 1s ease-in-out;
+    
+}
+
+@keyframes growUpSilder {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .slider__title-second--h6 {
@@ -675,6 +688,75 @@ a{
     margin-left: 150px;
 }
 
+
+
+
+/* Contact us */
+
+.container__map {
+    position: relative;
+    height: 1100px;
+
+}
+
+.container__map--img {
+    width: 100%;
+}
+
+
+.container__map--form {
+    position: absolute;
+    width: 1110px;
+    height: 564px;
+    background-color: var(--white-color);
+    bottom: 57px;
+    right: 209px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 2px black;
+
+}
+
+.map__form {
+
+    /* background-color: #FFBC13; */
+    width: 50%;
+    height: 80%;
+    margin: 64px;
+}
+
+.map__form--h6 {
+    font-size: 13px;
+    color: var(--primary-color);
+
+}
+
+.map__form--h2 {
+    font-size: 45px;
+    margin: 36px 0;
+}
+
+.map__form--p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.map__form--location,
+.map__form--email,
+.map__form--phone
+{
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+.map__form--span-bold {
+    padding-right: 4px;
+}
+
+.map__form--span {
+    padding-left: 10px;
+}
 
 
 
