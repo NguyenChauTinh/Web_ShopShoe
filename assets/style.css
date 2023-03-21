@@ -694,7 +694,7 @@ a{
 /* Contact us */
 
 .container__map {
-    position: relative;
+    /* position: relative; */
     height: 1100px;
 
 }
@@ -703,18 +703,22 @@ a{
     width: 100%;
 }
 
-
 .container__map--form {
-    position: absolute;
-    width: 1110px;
+    position: relative;
+    width: 100%;
     height: 564px;
     background-color: var(--white-color);
     bottom: 57px;
-    right: 209px;
+    right: 0px;
     margin-bottom: 100px;
+    box-shadow: 0 0 2px black;
+
+}
+
+.container__map--box {
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 0 2px black;
+    padding: 64px;
 
 }
 
@@ -723,23 +727,26 @@ a{
     /* background-color: #FFBC13; */
     width: 50%;
     height: 80%;
-    margin: 64px;
 }
 
 .map__form--h6 {
     font-size: 13px;
     color: var(--primary-color);
+    font-weight: bold;
+
 
 }
 
 .map__form--h2 {
     font-size: 45px;
     margin: 36px 0;
+    font-weight: bold;
 }
 
 .map__form--p {
     font-size: 16px;
     line-height: 24px;
+    margin: 22px 0;
 }
 
 .map__form--location,
@@ -756,6 +763,55 @@ a{
 
 .map__form--span {
     padding-left: 10px;
+}
+
+.map__form--h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.map__form--input {
+    height: 56px;
+    width: 475px;
+}
+
+
+.map__form--textarea {
+    width: 475px;
+    height: 128px;
+}
+
+.map__form--input,
+.map__form--textarea {
+    margin: 4px 0;
+    padding: 16px;
+    font-size: 16px;
+    outline: none;
+}
+
+.map__form-btn {
+    position: relative;
+}
+
+.map__form--btn {
+    width: 206px;
+    height: 44px;
+    background-color: var(--black-color);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.25s ease-in;
+}
+
+.map__form--span {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.map__form--btn:hover {
+    transform: translateY(-10px);
 }
 
 
@@ -827,7 +883,7 @@ a{
 }
 
 .footer__container-left--btn:hover {
-    transform: translateY(-14px);
+    transform: translateY(-10px);
 }
 
 .footer__container-right {
