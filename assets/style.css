@@ -444,8 +444,9 @@
     flex-direction: column;
     display: flex;
     align-items: center;
+    margin-top: 25px;
 }
-.product_Caption h3{
+.product_Caption h2{
     color: #FFBC13;
 }
 .product_Caption h1{
@@ -480,6 +481,7 @@
     flex-direction: column;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     margin: 10px;
     border: 2px solid #ccc;
     width: 254px;
@@ -488,10 +490,13 @@
     width: 250px;
     height: 250px;
 }
-
-.iconStart{
-    width: 20px;
-    height: 20px;
+.product_itemValue h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.icon_start{
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
 }
 
 .select-option{
@@ -502,6 +507,7 @@
     height: 40px;
     padding-top: 12px;
     padding-left: 4px;
+    margin-bottom: 10px;
 }
 .item_go_to_shop{ 
     display: flex;
@@ -513,6 +519,8 @@
     margin-left: 30px;
     position: relative;
     width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .shopNow h3{
     color: #FFBC13;
@@ -609,7 +617,8 @@ a{
 }
 .lb_color{
     width: 45px;
-    padding: 9px;
+    padding-top: 18px;
+    padding-left: 10px;
     font-weight: bold;
     font-size: 14px;
 }
@@ -618,10 +627,12 @@ a{
     height: 40px;
     padding-top: 9px;
     padding-left: 10px;
+    margin-bottom: 5px;
 }
 
 .cb_color select{
     width: 300px;
+    height: 40px;
 }
 .choose_size{
     display: flex;
@@ -629,7 +640,8 @@ a{
 }
 .lb_size{
     width: 45px;
-    padding: 9px;
+    padding-top: 18px;
+    padding-left: 10px;
     font-weight: bold;
     font-size: 14px;
 }
@@ -641,6 +653,7 @@ a{
 }
 .cb_size select{
     width: 300px;
+    height: 40px;
 }
 .add_to_cart{
     display: flex;
@@ -648,11 +661,17 @@ a{
     margin-top: 50px;
 }
 .qty_product{
-    border: 1px solid black;
-    width: 30px;
-    padding: 9px;
+    /* border: 1px solid black; */
+    width: 40px;
+    padding-left: 9px;
 }
-.btn_add{
+
+.btn_add a{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+    display: block;
     border: 1px solid black;
     width: 300px;
     margin-left: 30px;
@@ -660,11 +679,6 @@ a{
     padding-top: 9px;
     padding-left: 110px;
     background-color: darkgray;
-}
-.btn_add a{
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
 }
 
 .bottom_caption{
@@ -674,12 +688,10 @@ a{
     align-items: center;
     margin-top: 30px;
 }
-.bottom_caption h3{
-    color: #FFBC13;
-    font-size: 14px;
-}
 .bottom_caption h2{
-    font-size: 25px;
+    color: #FFBC13;
+}
+.bottom_caption h1{
     font-weight: bold;
     margin-top: 10px;
 }
