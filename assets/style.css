@@ -134,12 +134,13 @@
     font-size: 1.6rem;
     background: none;
     color: var(--white-color);
+    /* background-color: #ccc; */
 }   
 
 .header__login-icon--search {
     position: absolute;
-    top: 4px;
-    right: 106px;
+    top: 7px;
+    right: 107px;
     color: var(--white-color);
     font-size: 1.6rem;
 }
@@ -773,7 +774,7 @@ a{
     padding-right: 4px;
 }
 
-.map__form--span {
+.map__form--span-1 {
     padding-left: 10px;
 }
 
