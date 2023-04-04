@@ -485,15 +485,18 @@
     justify-content: space-around;
     margin: 10px;
     border: 2px solid #ccc;
-    width: 254px;
+    width: 270px;
 }
 .product_itemValue .imgValue{
-    width: 250px;
+    width: 254px;
     height: 250px;
+    margin-bottom: 10px;
 }
 .product_itemValue h2{
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
+    font-size: 15px;
+
 }
 .icon_start{
     /* margin-top: 5px;
@@ -501,14 +504,15 @@
 }
 
 .select-option{
-    font-size: 18px;
+    font-size: 12px;
+    font-weight: bold;
     background-color: #FFBC13;
     color: #000;
     width: 123px;
     height: 40px;
     padding-top: 12px;
-    padding-left: 4px;
-    margin-bottom: 10px;
+    padding-left: 12px;
+    margin-bottom: 20px;
 }
 .item_go_to_shop{ 
     display: flex;
@@ -577,15 +581,15 @@ a{
     margin-top: 50px;
 }
 .container_center .image img{
-    width: 400px;
-    height: 400px;
+    width: 650px;
+    height: 500px;
 }
 .image_values{
     display: flex;
     justify-content: left;
 }
 .image_values img{
-    width: 100px;
+    width: 120px;
     height: 100px;
     margin-right: 20px;
     margin-top: 20px;
@@ -602,7 +606,10 @@ a{
     font-size: 20px;
     margin-left: 30px;
 }
-
+.lb_300{
+    font-weight: bold;
+    font-size: 30px;
+}
 .cost_comment .start_comment img{
     width: 20px;
 }
@@ -621,7 +628,7 @@ a{
     padding-top: 18px;
     padding-left: 10px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
 }
 .cb_color{
     width: 300px;
@@ -629,6 +636,8 @@ a{
     padding-top: 9px;
     padding-left: 10px;
     margin-bottom: 5px;
+    font-size: 18px;
+    margin-left: 30px;
 }
 
 .cb_color select{
@@ -641,16 +650,19 @@ a{
 }
 .lb_size{
     width: 45px;
-    padding-top: 18px;
+    padding-top: 40px;
     padding-left: 10px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
 }
 .cb_size{
     width: 300px;
     height: 40px;
     padding-top: 9px;
     padding-left: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 30px;
 }
 .cb_size select{
     width: 300px;
@@ -658,7 +670,7 @@ a{
 }
 .add_to_cart{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     margin-top: 50px;
 }
 .qty_product{
@@ -675,13 +687,16 @@ a{
     display: block;
     border: 1px solid black;
     width: 300px;
-    margin-left: 30px;
+    margin-left: 40px;
     height: 40px;
-    padding-top: 9px;
-    padding-left: 110px;
+    padding-top: 10px;
+    padding-left: 100px;
     background-color: darkgray;
 }
 
+.container_bottom{
+    margin-bottom: 80px;
+}
 .bottom_caption{
     flex-direction: column;
     display: flex;
@@ -691,15 +706,167 @@ a{
 }
 .bottom_caption h2{
     color: #FFBC13;
+    font-size: 16px;
+   
 }
 .bottom_caption h1{
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 30px;
+    font-size: 50px;
+
 }
 
 .bottom_items{
     margin-left: 150px;
 }
+
+
+
+
+
+
+
+/* about us */
+.about_champz{
+    background-color: black;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.about_champz_left{
+    margin-left: 200px;
+    font-size: 14px;
+}
+.about_champz h2{
+    color:#FFBC13;
+}
+.about_champz h1{
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+}
+.about_champz p{
+    color: white;
+    margin-bottom: 20px;
+}
+.lern_more{
+    color: white;
+    border: 1px solid white;
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 22px;
+}
+.about_champz video{
+    padding: 100px 0 0 30px;
+}
+.our_commitment_to_you{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our_commit_to_you_right{
+    font-size: 14px;
+}
+.our_commit_to_you_right h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.our_commitment_to_you p{
+    margin-bottom: 20px;
+}
+.our_commitment_to_you img{
+    padding: 0 50px 100px 0px;
+}
+.why_should_shop{
+    display: flex;
+    justify-content: center;
+}
+.why_should_shop_left{
+    
+}
+.why_should_shop_right{
+    padding: 0px 0px 0px 50px;
+    /* height: 600px; */
+}
+.why_should_shop_right p{
+    margin-top: 30px;
+    font-size: 14px;
+    
+}
+.logo_why_should_shop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.logo_why_should_shop div{
+    margin-left: 20px;
+}
+.lb_why_us{
+    color: #FFBC13;
+    margin-bottom: 25px;
+}
+.view_all{
+    color: white;
+    background-color: #000;
+    width: 140px;
+    height: 50px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-left: 40px;
+    transition: 0.5s;
+}
+.view_all:hover{
+    transform: translateY(-20px);
+}
+.what_our_customer{
+    font-size: 14px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+.best_shoes_store{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+.best_shoes_store2{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 20px;
+
+}
+.center_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 50px 0;
+}
+.space{
+    margin-top: 10px;
+}
+.lern_more{
+    transition: 0.5s;
+}
+
+.lern_more:hover{
+    transform: translateY(-20px);
+}
+
 
 
 
@@ -711,7 +878,7 @@ a{
     height: 1100px;
 
 }
-
+.
 .container__map--img {
     width: 100%;
 }
