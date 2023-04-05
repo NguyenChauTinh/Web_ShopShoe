@@ -5,6 +5,7 @@
 
     --header-height: 60px;
     --primary-color: #FFBC13;
+
 }
 * {
     margin: 0;
@@ -45,3 +46,4 @@ html {
         transform: translateY(0px);
     }
 }
+

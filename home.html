@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+
 </head>
 <body>
     <div class="app">
@@ -49,7 +51,7 @@
                             </div>
                         </li>
                         <li class="header__login-icons">
-                            <a href="">
+                            <a href="#" class="js-login">
                                 <i class="fa-solid fa-user header__login-icon"></i>
                             </a>
                         </li>
@@ -224,25 +226,42 @@
             </div>
         </footer>
         <!-- End -->
-
-        <!-- Login -->
-        <!-- <div class="modal">
-            <div class="modal__container">
-                <div class="modal__close">
-                    
-                </div>
-                <div class="modal__header">
-
-                </div>
-                <div class="modal__body">
-
-                </div>
-                <div class="modal__footer">
-
-                </div>
-            </div>
-        </div> -->
-
     </div>
+
+    <!-- Login -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal-header">
+                <!-- <i class="modal-heading-icon ti-bag"></i> -->
+                LOGIN
+            </div>
+            <div class="modal-body">
+                <label for="modal-quantity" class="modal-label">
+                    <i class="ti-user"></i>
+                    Username
+                </label>
+                <input id="modal-quantity" type="text" class="modal-input" placeholder="Type your username" >
+
+                <label for="modal-email" class="modal-label">
+                    <i class="ti-lock"></i>
+                     Password
+                </label>
+                <input id="modal-email" type="password" class="modal-input" placeholder="Type your password">
+
+                <button class="buy-tickets js-login-cfm">
+                    LOGIN <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <div class="modal-footer">
+                <button class="modal-footer-btn">Register</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/main.js">
+    </script>
 </body>
 </html>
