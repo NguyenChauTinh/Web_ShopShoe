@@ -15,25 +15,28 @@
         display: block;
     }
 
-    .header__controls,
-    .header__login--search {
-        display: none;
-    }
 }
 
 /* TABLET AND MOBILE */
 
 @media (max-width: 63.9375em) { /* 1023px */
-    #footer .socials-list a {
-        margin: 0 8px;
+    .header__controls {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        top: 60px;
+        padding: 0;
     }
 
-    #footer .copyright a {
-        padding: 12px 0;
-        display: inline-block;
+    .header__menu {
+        display: block;
     }
 
-
+    .container {
+        overflow: hidden;
+    }
 }
 
 
