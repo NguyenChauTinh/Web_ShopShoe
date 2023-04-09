@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
 
 </head>
 <body>
@@ -19,10 +20,13 @@
             <div class="grid">
                 <!-- Navbar -->
                 <nav class="header__navbar">
+                    <div class="header__menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                     <div class="header__logo">jordan</div>
                     <ul class="header__controls">
                         <li class="header__controls-titles">
-                            <a href="./home.html" class="header__controls-title">HOME</a> 
+                            <a href="#" class="header__controls-title">HOME</a> 
                         </li>
                         <li class="header__controls-titles">
                             <a href="./about.html" class="header__controls-title">ABOUT</a> 
@@ -42,13 +46,18 @@
                         </li>
                     </ul>
                     <ul class="header__login">
-                        <li class="header__login-icons">
+                        <!-- <li class="header__login-icons">
                             <div class="header__login--search">
                                 <input class="header__login-input" type="text" placeholder="Search...">
                                 <a href="">
                                     <i class="fa-solid fa-magnifying-glass header__login-icon--search"></i>
                                 </a>
                             </div>
+                        </li> -->
+                        <li class="header__login-icons">
+                            <a href="#" class="js-search">
+                                <i class="fa-solid fa-magnifying-glass header__login-icon--search"></i>
+                            </a>
                         </li>
                         <li class="header__login-icons">
                             <a href="#" class="js-login">
@@ -56,7 +65,7 @@
                             </a>
                         </li>
                         <li class="header__login-icons">
-                            <a href="">
+                            <a href="#" class="js-cart">
                                 <i class="fa-solid fa-cart-shopping header__login-icon"></i>
                             </a>
                         </li>
@@ -71,21 +80,22 @@
         <div class="container">
             <div class="grid__full-width">
                 <div class="container__slider">
-                    <img class="container__slider-items" src="./assets/img/slider/slider (9).jpg" alt="">
 
-                    <div class="container__slider-title">
-                        
-                        <h6 class="slider__title--h6">super deals</h6>
-                        <h1 class="slider__title--h1">road</h1>
-                        <h1 class="slider__title--h1 ">running</h1>
-                        <h1 class="slider__title--h1">balck editions</h1>
-                        <p class="slider__title--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.    
-                        </p>
-                        <div class="slider__tilte--btn">
-                            <a class="slider__title--a" role="button" href="./shop.html">
-                                <span class="slider__title--span">SHOP NOW</span>
-                            </a>
+                    <div class="grid grid__silder">
+                        <div class="container__slider-title">
+                            
+                            <h6 class="slider__title--h6">super deals</h6>
+                            <h1 class="slider__title--h1">road</h1>
+                            <h1 class="slider__title--h1 ">running</h1>
+                            <h1 class="slider__title--h1">balck editions</h1>
+                            <p class="slider__title--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.    
+                            </p>
+                            <div class="slider__tilte--btn">
+                                <a class="slider__title--a" role="button" href="./shop.html">
+                                    <span class="slider__title--span">SHOP NOW</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -229,13 +239,12 @@
     </div>
 
     <!-- Login -->
-    <div class="modal js-modal">
+    <div class="modal modal-login js-modal">
         <div class="modal-container js-modal-container">
             <div class="modal-close js-modal-close">
                 <i class="ti-close"></i>
             </div>
             <div class="modal-header">
-                <!-- <i class="modal-heading-icon ti-bag"></i> -->
                 LOGIN
             </div>
             <div class="modal-body">
@@ -251,14 +260,78 @@
                 </label>
                 <input id="modal-email" type="password" class="modal-input" placeholder="Type your password">
 
+                
                 <button class="buy-tickets js-login-cfm">
                     LOGIN <i class="ti-check"></i>
                 </button>
             </div>
 
             <div class="modal-footer">
-                <button class="modal-footer-btn">Register</button>
+                <button class="modal-footer-btn modal-register-btn">Register</button>
             </div>
+        </div>
+    </div>
+
+    <!-- Register -->
+    <div class="modal modal-register js-modals">
+        <div class="modal-container js-modal-containers">
+            <div class="modal-close js-modal-closes">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal-header">
+                REGISTER
+            </div>
+            <div class="modal-body">
+                <label for="modal-quantity" class="modal-label">
+                    <i class="ti-user"></i>
+                    Username
+                </label>
+                <input id="modal-quantity" type="text" class="modal-input" placeholder="Type your username" >
+
+                <label for="modal-email" class="modal-label">
+                    <i class="ti-lock"></i>
+                     Password
+                </label>
+                <input id="modal-email" type="password" class="modal-input" placeholder="Type your password">
+
+                <label for="modal-email" class="modal-label">
+                    <i class="ti-lock"></i>
+                     Comfirm Password
+                </label>
+                <input id="modal-email" type="password" class="modal-input" placeholder="Type your comfirm password">
+
+                <label for="modal-email" class="modal-label">
+                    <i class="ti-email"></i>
+                     Email
+                </label>
+                <input id="modal-email" type="email" class="modal-input" placeholder="Type your email">
+
+
+                <button class="buy-tickets js-register-cfm">
+                    REGISTER <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <div class="modal-footer"> 
+                <button class="modal-footer-btn modal-login-btn">Login</button>
+            </div>
+        </div>
+    </div>
+    <!-- Cart -->
+    <div class="modal js-modal-cart">
+        <div class="modal-container-cart js-modal-container-cart">
+            <div class="modal__cart-close js-modal-close-cart">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal__cart-items">
+                No product in the cart.
+            </div>  
+        </div>
+    </div>
+    <!-- Search -->
+    <div class="modal js-modal-search">
+        <div class="modal-container-search js-modal-container-search">
+            <input type="text" placeholder="Search...">
         </div>
     </div>
     <script src="./assets/main.js">

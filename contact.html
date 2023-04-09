@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.3.0-web/css/all.min.css">
 </head>
 <body>
@@ -36,7 +37,7 @@
                             </div>
                         </li>
                         <li class="header__controls-titles">
-                            <a href="./contact.html" class="header__controls-title">CONTACT</a>
+                            <a href="#" class="header__controls-title">CONTACT</a>
                         </li>
                     </ul>
                     <ul class="header__login">
@@ -47,12 +48,12 @@
                             </div>
                         </li>
                         <li class="header__login-icons">
-                            <a href="">
+                            <a href="#" class="js-login">
                                 <i class="fa-solid fa-user header__login-icon"></i>
                             </a>
                         </li>
                         <li class="header__login-icons">
-                            <a href="">
+                            <a href="#" class="js-cart">
                                 <i class="fa-solid fa-cart-shopping header__login-icon"></i>
                             </a>
                         </li>
@@ -200,5 +201,98 @@
         <!-- End -->
 
     </div>
+
+        <!-- Login -->
+        <div class="modal modal-login js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ti-close"></i>
+                </div>
+                <div class="modal-header">
+                    LOGIN
+                </div>
+                <div class="modal-body">
+                    <label for="modal-quantity" class="modal-label">
+                        <i class="ti-user"></i>
+                        Username
+                    </label>
+                    <input id="modal-quantity" type="text" class="modal-input" placeholder="Type your username" >
+    
+                    <label for="modal-email" class="modal-label">
+                        <i class="ti-lock"></i>
+                         Password
+                    </label>
+                    <input id="modal-email" type="password" class="modal-input" placeholder="Type your password">
+    
+                    
+                    <button class="buy-tickets js-login-cfm">
+                        LOGIN <i class="ti-check"></i>
+                    </button>
+                </div>
+    
+                <div class="modal-footer">
+                    <button class="modal-footer-btn modal-register-btn">Register</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Register -->
+        <div class="modal modal-register js-modals">
+            <div class="modal-container js-modal-containers">
+                <div class="modal-close js-modal-closes">
+                    <i class="ti-close"></i>
+                </div>
+                <div class="modal-header">
+                    REGISTER
+                </div>
+                <div class="modal-body">
+                    <label for="modal-quantity" class="modal-label">
+                        <i class="ti-user"></i>
+                        Username
+                    </label>
+                    <input id="modal-quantity" type="text" class="modal-input" placeholder="Type your username" >
+    
+                    <label for="modal-email" class="modal-label">
+                        <i class="ti-lock"></i>
+                         Password
+                    </label>
+                    <input id="modal-email" type="password" class="modal-input" placeholder="Type your password">
+    
+                    <label for="modal-email" class="modal-label">
+                        <i class="ti-lock"></i>
+                         Comfirm Password
+                    </label>
+                    <input id="modal-email" type="password" class="modal-input" placeholder="Type your comfirm password">
+    
+                    <label for="modal-email" class="modal-label">
+                        <i class="ti-email"></i>
+                         Email
+                    </label>
+                    <input id="modal-email" type="email" class="modal-input" placeholder="Type your email">
+    
+    
+                    <button class="buy-tickets js-register-cfm">
+                        REGISTER <i class="ti-check"></i>
+                    </button>
+                </div>
+    
+                <div class="modal-footer"> 
+                    <button class="modal-footer-btn modal-login-btn">Login</button>
+                </div>
+            </div>
+        </div>
+        <!-- Cart -->
+        <div class="modal js-modal-cart">
+            <div class="modal-container-cart js-modal-container-cart">
+                <div class="modal__cart-close js-modal-close-cart">
+                    <i class="ti-close"></i>
+                </div>
+                <div class="modal__cart-items">
+                    No product in the cart.
+                </div>  
+            </div>
+        </div>
+        <script src="./assets/main.js">
+        </script>
 </body>
 </html>

@@ -138,11 +138,13 @@
 }   
 
 .header__login-icon--search {
-    position: absolute;
-    top: 7px;
-    right: 107px;
+    /* position: absolute; */
+    /* top: 7px;
+    right: 107px; */
     color: var(--white-color);
     font-size: 1.6rem;
+    padding: 0 16px;
+
 }
 
 
@@ -155,21 +157,21 @@
 /* Container slider home */
 
 .container__slider {
-    position: relative;
+    background-image: url(./img/slider/slider\ \(9\).jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
 }
 
-.container__slider-items {
-    width: 100%;
+.grid.grid__silder {
+    padding-top: 200px;
 
 }
 
 .container__slider-title {
-    position: absolute;
     height: 484px;
     width: 830px;
     /* background-color: #ccc; */
-    top: 182px;
-    left: 156px;
     animation: growUp 1s ease-in-out;
     
 }
@@ -1173,7 +1175,8 @@ a{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
     /* display: flex; */
@@ -1282,3 +1285,70 @@ a{
         transform: translateY(0);
     }
 }
+
+/* Cart modal */
+.modal-container-cart {
+    position: absolute;
+    background-color: #fff;
+    width: calc(100% - 80%);
+    min-width: 300px;
+    /* max-width: calc(100% - 50px); */
+    height: 100%;
+    animation: modalFadeIn ease 0.4s;
+    right: 0;
+
+}
+
+.modal__cart-close {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    right: 0;
+    padding: 12px;
+}
+
+.modal__cart-close:hover {
+    color: #fff;
+    background-color: red;
+}
+
+.modal__cart-items {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 44px;
+    margin-left: 14px;
+}
+
+/* SearchModal */
+.modal-container-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container-search input {
+    width: 100%;
+    height: 10%;
+    outline: none;
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    border-radius: 10px;
+
+}
+
+
+/* Responsive */
+
+.header__menu {
+    font-size: 20px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 6px;
+    display: none;
+}
+
+
+/* End */
