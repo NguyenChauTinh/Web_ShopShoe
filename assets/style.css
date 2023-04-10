@@ -506,10 +506,10 @@
     justify-content: space-around;
     margin: 10px;
     border: 2px solid #ccc;
-    width: 270px;
+    width: 250px;
 }
 .product_itemValue .imgValue{
-    width: 254px;
+    width: 180px;
     height: 250px;
     margin-bottom: 10px;
 }
@@ -580,16 +580,6 @@
 .btnShopNow:hover{
     transform: translateY(-10px);
 }
-
-
-
-
-
-
-
-
-
-
 
                                 /* Product detail*/
 a{
@@ -738,7 +728,7 @@ a{
 }
 
 .bottom_items{
-    margin-left: 150px;
+    /* margin-left: 100px; */
 }
 
 
